@@ -1,0 +1,40 @@
+<style>
+    img{
+        width: 150px;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="https://home.sia.co.th/assets/img/logosia2.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <button mat-button [matMenuTriggerFor]="menu">Home</button>
+                            <button mat-button [matMenuTriggerFor]="menu">About</button>
+                            <button mat-button [matMenuTriggerFor]="menu">Auction</button>
+                            <button mat-button [matMenuTriggerFor]="menu">Service</button>
+                            <button mat-button [matMenuTriggerFor]="menu">Contact</button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>Car</button>
+                                <button mat-menu-item>motorcycle</button>
+                                <button mat-menu-item>Moto</button>
+                                <button mat-menu-item>Moto</button>
+                            </mat-menu>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <button class="registerBtn" mat-raised-button color="primary">Register</button>
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
